@@ -1,0 +1,127 @@
+<!--Palliyawattage Raminda Deshapriya -->
+<!--213289832-->
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Feedback</title>
+<!--Overloading the default stylesheets with customised .css sheets-->
+<link rel="stylesheet" href="themes/myThemeNew.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+<!-- Testing in 3 differnet screen sizes -->
+<link rel='stylesheet' media='screen and (max-width: 700px)' href='css/narrow.css' />
+<link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 900px)' href='css/medium.css' />
+<link rel='stylesheet' media='screen and (min-width: 901px)' href='css/wide.css' />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+</head>
+	<body>
+		<!--Input the header of the page as the logo (.png) TAO  -->
+        <!-- Alligning it to the middle,
+        using the customised data-theme named = "MyThemeNew.css" -->
+        
+
+		<div data-role = "page" id = "contact" data-theme="d" align="middle">
+  			<div data-role = "header">
+    			<img src="TAO.png" alt="LOGO" style="width:50%;height:100px;">
+    		</div>
+    <!-- Inputing the main content -->
+      	<div data-role = "main" class = "ui-content">
+
+		<!--Creating the navigation bar for the main menu -->
+    		<div data-role="navbar">
+    				<ul>
+        				<li><a href = "Menu.html" data-icon="bullets">Menu</a></li> 
+            			<li><a href = "Recipes.html"data-icon="heart">Recipies</a> </li>
+            			<li><a href = "Contact.html" data-icon="phone">Contact</a></li>
+            			<li><a href = "Fedback.html" data-icon="comment">Feedback</a></li>
+            			<li><a href = "Developer.html" data-icon="user">Developer</a></li>
+        			</ul>
+			</div>
+   
+   
+   <!-- Input forms for feedback input -->
+   			<form method="post">
+      			<div class="ui-field-contain">
+        			<label for="First Name">First name :</label>
+        			<input type="text" name="firstname" id="firstname" placeholder="First Name..">       
+        			<label for="Last Name">Last name :</label>
+        			<input type="text" name="firstname" id="lastname" placeholder="Last Name..">       
+        			<label for="email">E-mail :</label>
+       				<input type="email" name="email" id="email" placeholder="Your email..">
+        			<label for="info">Feedback :</label>
+        			<textarea name="addinfo" id="info" placeholder="Please Enter your Feedback here.."></textarea>
+ </br>       		
+        		</div>
+			<form>
+      
+      <!-- creating an popup box that will pop up on-click of the submit button -->
+      		<a href="#myPopup" data-rel="popup" class="ui-btn ui-icon-mail ui-btn-icon-left">Submit</a>
+				<!-- defining the class myPopup and setting up size  -->
+    			<div data-role="popup" id="myPopup" class="ui-content" style="min-width:200px;">
+      
+      		<!-- pop up statment with the two buttons -->
+      				<p> Are You Sure You Want To Submit The Feedback Form? </p>
+      
+      			<!-- if clicked, it'll direct to the new page-->
+	  				<a href="#response" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-notext" data-rel="dialog"></a>
+   	   				<a href="Fedback.html" class="ui-btn ui-btn-inline ui-corner-all ui-icon-delete ui-btn-icon-notext"></a>
+    			</div>
+   
+   
+   </div> 
+
+    <!-- Input footer -->
+    <div data-role = "footer">
+    <h1>&copy; Raminda Deshapriya 2015</h1>
+    </div>
+    
+</div>
+
+
+
+
+
+<!-- ////////////////////Feed back response page\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+
+
+
+				<!-- setting up the customized theme -->
+				<div data-role = "page" id = "response" data-theme = "d">
+  					<div data-role="header">
+    					<h1><b>SUBMIT SUCESSFUL!</b></h1>
+  					</div>
+				<!-- input content -->	
+  				<div data-role="main" class="ui-content">
+
+
+					<p>Thank you for submitting the feedback form!</p>
+					<p> A response email has been sent to your email adderess</p>
+</br>
+					<p><b>NOTE:</b><i>Your email address will not be used or given out for any marketing purposes by TAO&reg</i></p>
+                    
+                 <!-- dispalying current local time -->   
+				<div>
+             		<p id="current"></p>
+					<script>
+					var d = new Date();
+					document.getElementById("current").innerHTML = d;
+					</script>
+            
+  				</div>          
+    
+  				</div>
+
+
+			</div> 
+
+
+
+	</body>
+</html>

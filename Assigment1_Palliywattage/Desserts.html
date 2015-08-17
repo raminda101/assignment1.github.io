@@ -1,0 +1,105 @@
+<!--Palliyawattage Raminda Deshapriya -->
+<!--213289832-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Desserts</title>
+<!--Overloading the default stylesheets with customised .css sheets-->
+<link rel="stylesheet" href="themes/myThemeNew.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+<!-- Testing in 3 differnet screen sizes -->
+<link rel='stylesheet' media='screen and (max-width: 700px)' href='css/narrow.css' />
+<link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 900px)' href='css/medium.css' />
+<link rel='stylesheet' media='screen and (min-width: 901px)' href='css/wide.css' />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+</head>
+	<body>
+		<!--Input the header of the page as the logo (.png) TAO  -->
+        <!-- Alligning it to the middle,
+        using the customised data-theme named = "MyThemeNew.css" -->
+        
+
+		<div data-role = "page" id = "food" data-theme="d" align="middle">
+  			<div data-role = "header">
+                <img src="TAO.png" alt="LOGO" style="width:50%;height:100px;" > 
+    		</div>
+    <!-- Inputing the main content -->
+      	<div data-role = "main" class = "ui-content">
+
+    
+    <!--Creating the navigation bar for the Food menu -->
+            <div data-role="navbar" data-iconpos="left">
+    				<ul>
+                    	<li><a href = "Menu.html" data-icon="bullets">Menu</a></li>
+    	        		<li><a href = "Food.html">Mains</a></li>
+            			<li><a href = "Drinks.html">Drinks</a> </li>
+            			<li><a href = "Desserts.html">Desserts</a></li>
+        			</ul>
+	
+   			</div>
+  
+  
+  	<div data-role="main" class="ui-content">
+    
+<!-- using TABLES and OLUMNTOGGLE to show and hide the offers/discounts-->
+
+    <table data-role="table" data-mode="columntoggle" class="ui-responsive" id="myTable2">
+
+      <thead>
+        <tr>
+          <th><b>Num.</b></th>
+          <th><b>Item</b></th>
+          <th data-priority="1"><b>Price</b></th>
+          <th data-priority="2"><b>Offer</b></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>I1</td>
+          <td>Chocolate Banana With Cashew Nuts</td>
+          <td>$8.00</td>
+          <td><i>(none)</i></td>
+        </tr>
+
+        <tr>
+          <td>I2</td>
+          <td>Pineapple Fritter ( Deep fried Pineapple with golden syprup)</td>
+          <td>$8.20</td>
+          <td><i>(none)</i></td>
+        </tr>
+
+        <tr>
+          <td>I3</td>
+          <td>Japanese Mochi (Green tea, chocolate, vanilla or red bean)</td>
+          <td>$8.20</td>
+          <td><i>(none)</i></td>
+        </tr>
+
+        <tr>
+          <td>I4</td>
+          <td>Ice Cream (Chocolate, Vanilla or Mint)</td>
+          <td>$4.20</td>
+          <td>$3.00</td>
+       </tr>
+
+
+
+      </tbody>
+    </table>
+  </div>
+			<div>
+			<img src="de1.jpg" alt="bk1" style="width:100%;height:100%;" align = "bottom">
+			</div>
+
+	</div> 
+
+	</body>
+</html>

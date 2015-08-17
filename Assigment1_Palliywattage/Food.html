@@ -1,0 +1,108 @@
+<!--Palliyawattage Raminda Deshapriya -->
+<!--213289832-->
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Food</title>
+<!--Overloading the default stylesheets with customised .css sheets-->
+<link rel="stylesheet" href="themes/myThemeNew.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+<!-- Testing in 3 differnet screen sizes -->
+<link rel='stylesheet' media='screen and (max-width: 700px)' href='css/narrow.css' />
+<link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 900px)' href='css/medium.css' />
+<link rel='stylesheet' media='screen and (min-width: 901px)' href='css/wide.css' />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+</head>
+	<body>
+		<!--Input the header of the page as the logo (.png) TAO  -->
+        <!-- Alligning it to the middle,
+        using the customised data-theme named = "MyThemeNew.css" -->
+        
+
+		<div data-role = "page" id = "food" data-theme="d" align="middle">
+  			<div data-role = "header">
+    			<img src="TAO.png" alt="LOGO" style="width:50%;height:100px;">
+    		</div>
+    <!-- Inputing the main content -->
+      	<div data-role = "main" class = "ui-content">
+
+    
+    <!--Creating the navigation bar for the Food menu -->
+            <div data-role="navbar" data-iconpos="left">
+    				<ul>
+                    	<li><a href = "Menu.html" data-icon="bullets">Menu</a></li>
+    	        		<li><a href = "Food.html">Mains</a></li>
+            			<li><a href = "Drinks.html">Drinks</a> </li>
+            			<li><a href = "Desserts.html">Desserts</a></li>
+        			</ul>
+	
+   			</div>
+  
+  
+  	<div data-role="main" class="ui-content">
+    
+<!-- using TABLES and OLUMNTOGGLE to show and hide the offers/discounts-->
+
+    <table data-role="table" data-mode="columntoggle" class="ui-responsive" id="myTable1">
+
+       <thead>
+        <tr>
+          <th><b>Num.</b></th>
+          <th><b>Item</b></th>
+          <th data-priority="1"><b>Price</b></th>
+          <th data-priority="2"><b>Offer</b></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>F1</td>
+          <td>Chicken Fried Rice</td>
+          <td>$9.80</td>
+          <td>$9.00</td>
+        </tr>
+
+        <tr>
+          <td>F2</td>
+          <td>Pork Fried Rice</td>
+          <td>$11.80</td>
+          <td>$11.00</td>
+        </tr>
+
+        <tr>
+          <td>F3</td>
+          <td>Seafood Tom Yum Noodle Soup</td>
+          <td>$13.80</td>
+          <td><i>(none)</i></td>
+        </tr>
+
+        <tr>
+          <td>F4</td>
+          <td>Squid Ball and Beef Ball Noodle Soup</td>
+          <td>$12.90</td>
+          <td>$11.50</td>
+       </tr>
+
+
+
+      </tbody>
+    </table>
+  </div>
+  
+  		<!--Adding an image to the bottom of the page defining the sizes -->
+		<div>
+			<img src="f1.jpg" alt="bk1" style="width:100%;height:100%;" align = "bottom">
+
+		</div>
+
+		</div> 
+
+	</body>
+    
+</html>

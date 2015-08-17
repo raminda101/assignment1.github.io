@@ -1,0 +1,161 @@
+<!--Palliyawattage Raminda Deshapriya -->
+<!--213289832-->
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Recipies</title>
+<!--Overloading the default stylesheets with customised .css sheets-->
+<link rel="stylesheet" href="themes/myThemeNew.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<!-- Testing in 3 differnet screen sizes -->
+<link rel='stylesheet' media='screen and (max-width: 700px)' href='css/narrow.css' />
+<link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 900px)' href='css/medium.css' />
+<link rel='stylesheet' media='screen and (min-width: 901px)' href='css/wide.css' />
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+</head>
+	<body>
+		<!--Input the header of the page as the logo (.png) TAO  -->
+        <!-- Alligning it to the middle,
+        using the customised theme named = "MyThemeNew.css" -->
+        
+
+		<div data-role = "page" id = "recipies" data-theme="d" align="middle">
+  			<div data-role = "header">
+    			<img src="TAO.png" alt="LOGO" style="width:50%;height:100px;">
+    		</div>
+    <!-- Inputing the main content -->
+      	<div data-role = "main" class = "ui-content">
+
+		<!--Creating the navigation bar for the main menu -->
+    		<div data-role="navbar">
+    				<ul>
+        				<li><a href = "Menu.html" data-icon="bullets">Menu</a></li> 
+            			<li><a href = "Recipes.html"data-icon="heart">Recipies</a> </li>
+            			<li><a href = "Contact.html" data-icon="phone">Contact</a></li>
+            			<li><a href = "Fedback.html" data-icon="comment">Feedback</a></li>
+            			<li><a href = "Developer.html" data-icon="user">Developer</a></li>
+        			</ul>
+			</div>
+   <!-- Creating a panel list of ingredients for the main dish-->
+     	<div data-role="panel" id="chicken" data-position="right"> 
+    <!--listing down the ingredients-->
+    		<h2>Chicken Fried Rice</h2>
+
+    		<p>2 tablespoons light soy sauce</p>
+    		<p>2 tablespoons sweet chilli sauce</p>
+    		<p>2 tablespoons oyster sauce</p>
+    		<p>2 tablespoons peanut oil</p>
+    		<p>600g chicken breast fillets, trimmed, thinly sliced</p>
+    		<p>1 brown onion, cut into thin wedges</p>
+    		<p>2 garlic cloves, crushed</p>
+    		<p>3 cups cold cooked SunRice White Medium Grain Rice</p>
+    		<p>1/4 cup fried shallots</p>
+    		<p>4 green onions, sliced diagonally</p>
+            
+		<!--Creating the button as a reference to the div to display the elements. --> 
+            <a href="#chicken" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+		</div> 
+
+  
+  <!-- Creating a panel list of ingredients for the main dish-->
+  		<div data-role="panel" id="pork" data-position="right"> 
+    <!--listing down the ingredients-->
+    		<h2>Pork Fried Rice</h2>
+
+    
+    		<p>3 cups cold cooked SunRice White Medium Grain Rice</p>
+    		<p>1/4 cup fried shallots</p>
+    		<p>750g pork rashers, trimmed, thinly sliced</p>
+    		<p>2 tablespoons sweet chilli sauce</p>
+    		<p>2 tablespoons oyster sauce</p>
+    		<p>2 tablespoons peanut oil</p>
+    		<p>1 brown onion, cut into thin wedges</p>
+    		<p>2 tablespoons light soy sauce</p>
+    		<p>1/4 cup fried shallots</p>
+    		<p>4 green onions, sliced diagonally</p>
+			<!--Creating the button as a reference to the div to display the elements. -->
+    		<a href="#pork" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  		</div> 
+
+<!--seafood-->
+  <!-- Creating a panel list of ingredients for the main dish-->
+  		<div data-role="panel" id="seafood" data-position="right"> 
+     <!--listing down the ingredients-->   
+    		<h2>Seafood Tom Yum Noodle Soup</h2>
+
+    
+    		<lable>1.5L (6 cups) Campbell's Real Stock Vegetable</lable>
+    		<p>1 small brown onion, finely chopped</p>
+    		<p>3 large garlic cloves, finely chopped</p>
+    		<p>2 sprigs fresh oregano</p>
+    		<p>1 sprig fresh thyme</p>
+    		<p>1 400g can diced tomatoes</p>
+    		<p>2 tablespoons finely chopped drained bottled jalapeno chillies (Sandhurst brand)</p>
+   		    <p>Salt & freshly ground black pepper</p>
+    		<p>12 large green prawns, peeled leaving tails intact, deveined</p>
+    		<p>1 (about 150g) cleaned squid hood, cut into 2cm pieces, inside surface scored</p>
+			<!--Creating the button as a reference to the div to display the elements. -->
+    		<a href="#seafood" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  		</div> 
+
+<!--squid ball-->
+
+
+<!--fish-->
+ <!-- Creating a panel list of ingredients for the main dish-->
+  		<div data-role="panel" id="fish" data-position="right"> 
+    <!--listing down the ingredients-->
+    		<h2>Seafood Tom Yum Noodle Soup</h2>
+
+    
+    		<p>6 cups Campbell's Real Stock Chicken</p>
+    		<p>1 3cm piece fresh ginger, peeled, sliced</p>
+    		<p>2 whole star anise</p>
+    		<p>2 tablespoons soy sauce</p>
+    		<p>2 teaspoons brown sugar</p>
+    		<p>750g boneless white fish fillets, skin removed, roughly chopped</p>
+    		<p>1/2 cup fresh coriander leaves, chopped</p>
+    		<p>1 teaspoon finely grated lime rind</p>
+    		<p>1 garlic clove, crushed</p>
+    		<p>1250g dried rice-stick (pad Thai) noodles</p>
+    		<p>fresh coriander leaves, to serve</p>
+			<!--Creating the button as a reference to the div to display the elements. -->
+    		<a href="#fish" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  		</div> 
+
+<!--Creating the  main recipy list to display the elements. -->
+  		<div data-role="main" class="ui-content">
+    		
+            <h2>Our Famous Recipies </h2>
+            
+    			<ul data-role="listview" data-inset="true" data-icon="bullets" >
+      				<li><a href="#chicken">Chicken Fried Rice</a></li>
+      				<li><a href="#pork">Pork Fried Rice</a></li>
+      				<li><a href="#seafood">Seafood Tom Yum Noodle Soup</a></li>
+      				<li><a href="#fish">Coriander fish ball noodle soup</a></li>
+    			</ul>
+  		</div>
+
+
+
+		</div> 
+   
+   
+   
+    </div>
+        <!--inputting the footer  -->
+    	<div data-role = "footer">
+    		<h1>&copy; Raminda Deshapriya 2015</h1>
+    	</div>
+    
+
+
+
+	</body>
+</html>

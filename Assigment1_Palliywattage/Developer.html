@@ -1,0 +1,75 @@
+<!--Palliyawattage Raminda Deshapriya -->
+<!--213289832-->
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Developer</title>
+<!--Overloading the default stylesheets with customised .css sheets-->
+<link rel="stylesheet" href="themes/myThemeNew.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+<!-- Testing in 3 differnet screen sizes -->
+<link rel='stylesheet' media='screen and (max-width: 700px)' href='css/narrow.css' />
+<link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 900px)' href='css/medium.css' />
+<link rel='stylesheet' media='screen and (min-width: 901px)' href='css/wide.css' />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+</head>
+	<body>
+		<!--Input the header of the page as the logo (.png) TAO  -->
+        <!-- Alligning it to the middle,
+        using the customised data-theme named = "MyThemeNew.css" -->
+        
+
+		<div data-role = "page" id = "developer" data-theme="d" align="middle">
+  			<div data-role = "header">
+    			<img src="TAO.png" alt="LOGO" style="width:50%;height:100px;">
+    		</div>
+    <!-- Inputing the main content -->
+      	<div data-role = "main" class = "ui-content">
+
+		<!--Creating the navigation bar for the main menu -->
+    		<div data-role="navbar">
+    				<ul>
+        				<li><a href = "Menu.html" data-icon="bullets">Menu</a></li> 
+            			<li><a href = "Recipes.html"data-icon="heart">Recipies</a> </li>
+            			<li><a href = "Contact.html" data-icon="phone">Contact</a></li>
+            			<li><a href = "Fedback.html" data-icon="comment">Feedback</a></li>
+            			<li><a href = "Developer.html" data-icon="user">Developer</a></li>
+        			</ul>
+			</div>
+   
+ <br/> <br/><br/> 
+ 
+ <!--separaing the contact about-me and the image in two differnt blocks -->
+ 
+      		<div class="ui-grid-a" id="contact">
+			<div class="ui-block-a">
+            
+				<h2> About me,</h2>
+				<p>Name : Raminda Deshapriya</p>
+				<p>Student ID : 213289382</p>
+        		<p>Major : Bachalor of IT computer science & software development</p>
+        		<p>Email : raminda101@yahoo.com
+			</div>
+            
+			<div class="ui-block-b">
+				<img src="me-2.png" alt="name of the developer"/>
+			</div>
+   
+
+    		</div>
+    
+    		<div data-role = "footer">
+    			<h1>&copy; Raminda Deshapriya 2015</h1>
+    		</div>
+    
+		</div>
+
+
+	</body>
+</html>
